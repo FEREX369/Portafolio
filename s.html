@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Efecto de Texto que se Desvanece con CSS</title>
+    <style>
+        /* Estilo para el contenedor del texto */
+        .text-container {
+            text-align: center;
+        }
+
+        /* Estilo para el texto */
+        .fading-text {
+            font-size: 24px;
+            color: #333;
+            animation: fadeIn 2s linear alternate infinite; /* Aplicamos la animación */
+        }
+
+        /* Definimos la animación */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="text-container">
+    <div class="fading-text">Texto que se desvanece de entrada</div>
+</div>
+
+</body>
+</html>
